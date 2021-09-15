@@ -2,7 +2,7 @@ FROM php:8.0.10-cli-alpine
 
 RUN apk add --no-cache \
   # Required packages
-  supervisor \
+  postgresql-dev supervisor \
   # Convenient packages
   bash nano
 
@@ -10,6 +10,9 @@ RUN apk add --no-cache \
 RUN apk add --no-cache git py3-pip && \
   pip install git+https://github.com/coderanger/supervisor-stdout && \
   apk del git py3-pip
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql pdo_pgsql
 
 # Link default php.ini config file
 RUN ln -s "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
