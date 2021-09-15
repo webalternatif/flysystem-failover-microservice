@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Usage: ./throttle <seconds> <command>
+#
+# Executes <command> and wait the necessary time so that the total execution
+# time takes at least <seconds> seconds.
+# It can take more time if <command> takes more than <seconds> seconds to
+# execute.
+
+WAIT=$1
+shift 1
+COMMAND=$@
+
+NOW=$(date +%s.%N)
+TARGET=$(echo "$NOW + $WAIT" | bc)
+
+$COMMAND
+
+NOW=$(date +%s.%N)
+SLEEP=$(echo "$TARGET - $NOW" | bc)
+
+if [ $(echo "$SLEEP > 0" | bc) -eq 1 ]
+then
+  sleep $SLEEP
+fi

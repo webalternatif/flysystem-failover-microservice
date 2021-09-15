@@ -1,0 +1,7 @@
+/.git/
+/.idea/
+/bin/*
+!/bin/console
+!/bin/throttle
+/var/
+/vendor/

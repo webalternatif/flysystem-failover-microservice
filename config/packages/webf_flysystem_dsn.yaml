@@ -1,0 +1,3 @@
+webf_flysystem_dsn:
+    adapters:
+        default: failover(%env(STORAGES)%)?name=default
