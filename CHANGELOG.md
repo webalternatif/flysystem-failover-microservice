@@ -1,5 +1,9 @@
 ## v0.1.1 (unreleased)
 
+### 🔒 Security issues fixes
+
+  * Remove default `APP_SECRET` and generate it if needed in entrypoint
+
 ### ✨ New features
 
   * Add support for MySQL and PostgreSQL as message storage

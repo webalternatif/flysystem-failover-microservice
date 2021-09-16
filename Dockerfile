@@ -2,7 +2,7 @@ FROM php:8.0.10-cli-alpine
 
 RUN apk add --no-cache \
   # Required packages
-  postgresql-dev supervisor \
+  postgresql-dev pwgen supervisor \
   # Convenient packages
   bash nano
 

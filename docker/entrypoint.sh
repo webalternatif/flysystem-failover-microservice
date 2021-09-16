@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Generate a new APP_SECRET
+grep .env.local -qs -e '^APP_SECRET='
+if [ $? -gt 0 ]; then
+    echo APP_SECRET=$(pwgen -s1 40) >> .env.local
+fi
+
 if [ -n "$@" ]; then
   exec "$@"
 fi
