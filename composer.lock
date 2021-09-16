@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e53f6d55a85036aa619ed6cc509e1971",
+    "content-hash": "05d63c6308216ce63b485c15fe2422d5",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5473,16 +5473,16 @@
         },
         {
             "name": "webalternatif/flysystem-failover-bundle",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webalternatif/flysystem-failover-bundle.git",
-                "reference": "a6e09c7d75cc13ad9c533a57e471c0116eff4bdd"
+                "reference": "24b198700c05fbebfb0da10605bbc243b16aebcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webalternatif/flysystem-failover-bundle/zipball/a6e09c7d75cc13ad9c533a57e471c0116eff4bdd",
-                "reference": "a6e09c7d75cc13ad9c533a57e471c0116eff4bdd",
+                "url": "https://api.github.com/repos/webalternatif/flysystem-failover-bundle/zipball/24b198700c05fbebfb0da10605bbc243b16aebcc",
+                "reference": "24b198700c05fbebfb0da10605bbc243b16aebcc",
                 "shasum": ""
             },
             "require": {
@@ -5534,9 +5534,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webalternatif/flysystem-failover-bundle/issues",
-                "source": "https://github.com/webalternatif/flysystem-failover-bundle/tree/v0.2.0"
+                "source": "https://github.com/webalternatif/flysystem-failover-bundle/tree/v0.2.1"
             },
-            "time": "2021-09-14T09:01:21+00:00"
+            "time": "2021-09-16T07:47:53+00:00"
         },
         {
             "name": "webalternatif/flysystem-openstack-swift",
