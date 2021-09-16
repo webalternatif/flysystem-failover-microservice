@@ -1,4 +1,4 @@
-## v0.1.1 (unreleased)
+## v0.1.1 (September 16, 2021)
 
 ### 🔒 Security issues fixes
 
