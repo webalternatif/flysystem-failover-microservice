@@ -20,7 +20,7 @@
         "symfony/framework-bundle": "5.3.*",
         "symfony/proxy-manager-bridge": "5.3.*",
         "symfony/yaml": "5.3.*",
-        "webalternatif/flysystem-dsn-bundle": "^0.2.0",
+        "webalternatif/flysystem-dsn-bundle": "^0.3.2",
         "webalternatif/flysystem-failover-bundle": "^0.2.1",
         "webalternatif/flysystem-openstack-swift": "^0.2.0"
     },

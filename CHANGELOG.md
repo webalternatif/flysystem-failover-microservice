@@ -3,6 +3,7 @@
 ### ✨ New features
 
 * Add `NB_MSG_PER_WORKER` environment variable to configure the number of messages a worker will process in a single execution
+* Bump `webalternatif/flysystem-dsn-bundle` to `^0.3.2` to be able to use `local://` storage DSN
 
 ## v0.1.1 (September 16, 2021)
 
