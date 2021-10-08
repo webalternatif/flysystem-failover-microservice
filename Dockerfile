@@ -37,18 +37,18 @@ RUN set -eux; \
 RUN mkdir -p /opt/app && chown -R www-data:www-data /opt/app
 WORKDIR /opt/app
 
-# Copy supervisor configuration
-COPY ./docker/supervisor/ /etc/supervisor.d
-
-# Copy entrypoint
-COPY ./docker/entrypoint.sh /entrypoint.sh
-
 # Install dependencies
 COPY --chown=www-data:www-data ./composer.json /opt/app/composer.json
 COPY --chown=www-data:www-data ./composer.lock /opt/app/composer.lock
 COPY --chown=www-data:www-data ./symfony.lock  /opt/app/symfony.lock
 RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && \
   rm -rf ~/.composer
+
+# Copy supervisor configuration
+COPY ./docker/supervisor/ /etc/supervisor.d
+
+# Copy entrypoint
+COPY ./docker/entrypoint.sh /entrypoint.sh
 
 # Copy codebase
 COPY --chown=www-data:www-data ./bin/    bin
@@ -63,6 +63,7 @@ RUN composer dump-autoload --no-scripts --no-dev --optimize
 ENV APP_ENV=prod \
     DISABLE_SCAN=false \
     NB_WORKERS=1 \
+    NB_MSG_PER_WORKER=10 \
     SCAN_INTERVAL=300
 
 ENTRYPOINT ["/entrypoint.sh"]

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bin/console webf:flysystem-failover:process-message $([ $NB_MSG_PER_WORKER -gt 0 ] && echo --limit=$NB_MSG_PER_WORKER)

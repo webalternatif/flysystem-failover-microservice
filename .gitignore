@@ -1,11 +1,9 @@
-
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
 /.env.*.local
 /bin/*
 !/bin/console
-!/bin/throttle
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
@@ -16,3 +14,6 @@
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
+
+!/bin/throttle
+!/bin/worker

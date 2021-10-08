@@ -3,5 +3,6 @@
 /bin/*
 !/bin/console
 !/bin/throttle
+!/bin/worker
 /var/
 /vendor/

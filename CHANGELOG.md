@@ -1,3 +1,9 @@
+## v0.1.2 (unreleased)
+
+### ✨ New features
+
+* Add `NB_MSG_PER_WORKER` environment variable to configure the number of messages a worker will process in a single execution
+
 ## v0.1.1 (September 16, 2021)
 
 ### 🔒 Security issues fixes
