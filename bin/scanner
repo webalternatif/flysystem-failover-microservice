@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bin/exec "bin/throttle $SCAN_INTERVAL bin/console webf:flysystem-failover:sync"

@@ -27,14 +27,15 @@ what DSN you can use (all except `failover`).
 
 ### Environment variables
 
-| Name                | Description                                                                                                          | Default value                                  |
-|---------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| `DATABASE_URL`      | Doctrine database connection URL. See [Doctrine documentation][2]. Only `sqlite`, `mysql` and `pgsql` are supported. | `sqlite:///%kernel.project_dir%/var/db.sqlite` |
-| `DISABLE_SCAN`      | Disable the scanner process.                                                                                         | `false`                                        |
-| `NB_MSG_PER_WORKER` | Number of messages a worker will process in a single execution. `-1` for unlimited                                   | `10`                                           |
-| `NB_WORKERS`        | Number of workers to process messages.                                                                               | `1`                                            |
-| `SCAN_INTERVAL`     | Minimal duration in seconds between two scans (there is only one scan at a time).                                    | `300`                                          |
-| `STORAGES`          | Comma-separated DSN list of storages to synchronize. See [available DSN][1].                                         | *required*                                     |
+| Name                     | Description                                                                                                                          | Default value                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| `DATABASE_URL`           | Doctrine database connection URL. See [Doctrine documentation][2]. Only `sqlite`, `mysql` and `pgsql` are supported.                 | `sqlite:///%kernel.project_dir%/var/db.sqlite` |
+| `DISABLE_SCAN`           | Disable the scanner process.                                                                                                         | `false`                                        |
+| `NB_MSG_PER_WORKER`      | Number of messages a worker will process in a single execution. `-1` for unlimited                                                   | `10`                                           |
+| `NB_WORKERS`             | Number of workers to process messages.                                                                                               | `1`                                            |
+| `SCAN_INTERVAL`          | Minimal duration in seconds between two scans (there is only one scan at a time).                                                    | `300`                                          |
+| `STORAGES`               | Comma-separated DSN list of storages to synchronize. See [available DSN][1].                                                         | *required*                                     |
+| `USER_ID` and `GROUP_ID` | If both defined, those values are used as UID and GID of user executing commands inside the container. Useful when using `local://`. | `82` and `82`                                  |
 
 [1]: https://github.com/webalternatif/flysystem-dsn#adapters
 [2]: https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#connecting-using-a-url

@@ -15,5 +15,7 @@
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
 
+!/bin/exec
+!/bin/scanner
 !/bin/throttle
 !/bin/worker

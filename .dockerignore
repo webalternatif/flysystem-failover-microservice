@@ -2,6 +2,8 @@
 /.idea/
 /bin/*
 !/bin/console
+!/bin/exec
+!/bin/scanner
 !/bin/throttle
 !/bin/worker
 /var/

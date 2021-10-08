@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Usage: ./exec <command>
+#
+# Executes <command> with www-data, unless USER_ID = 0 and GROUP_ID = 0
+
+if [ "${USER_ID}" = 0 ] && [ "${GROUP_ID}" = 0 ]; then
+  $@
+else
+  su -s /bin/sh www-data -c "$@"
+fi
