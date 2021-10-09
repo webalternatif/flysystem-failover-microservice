@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd95a247e4f7e0cca06705e2dd3b2f76",
+    "content-hash": "16e81f6ad73cdb555c411d7c18fcffb2",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5018,6 +5018,108 @@
             "time": "2021-08-04T21:42:42+00:00"
         },
         {
+            "name": "symfony/serializer",
+            "version": "v5.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/serializer.git",
+                "reference": "a877799b1e94f792208bea68295f6675027c92be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/a877799b1e94f792208bea68295f6675027c92be",
+                "reference": "a877799b1e94f792208bea68295f6675027c92be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "doctrine/annotations": "<1.12",
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<4.4",
+                "symfony/property-access": "<4.4",
+                "symfony/property-info": "<5.3",
+                "symfony/yaml": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.12",
+                "phpdocumentor/reflection-docblock": "^3.2|^4.0|^5.0",
+                "symfony/cache": "^4.4|^5.0",
+                "symfony/config": "^4.4|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/error-handler": "^4.4|^5.0",
+                "symfony/filesystem": "^4.4|^5.0",
+                "symfony/form": "^4.4|^5.0",
+                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
+                "symfony/mime": "^4.4|^5.0",
+                "symfony/property-access": "^4.4.9|^5.0.9",
+                "symfony/property-info": "^5.3",
+                "symfony/uid": "^5.1",
+                "symfony/validator": "^4.4|^5.0",
+                "symfony/var-dumper": "^4.4|^5.0",
+                "symfony/var-exporter": "^4.4|^5.0",
+                "symfony/yaml": "^4.4|^5.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "For using the metadata cache.",
+                "symfony/config": "For using the XML mapping loader.",
+                "symfony/mime": "For using a MIME type guesser within the DataUriNormalizer.",
+                "symfony/property-access": "For using the ObjectNormalizer.",
+                "symfony/property-info": "To deserialize relations.",
+                "symfony/var-exporter": "For using the metadata compiler.",
+                "symfony/yaml": "For using the default YAML mapping loader."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Serializer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/serializer/tree/v5.3.8"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-17T08:55:39+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v2.4.0",
             "source": {
@@ -5416,6 +5518,59 @@
             "time": "2021-07-29T06:20:01+00:00"
         },
         {
+            "name": "webalternatif/flysystem-composite",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webalternatif/flysystem-composite.git",
+                "reference": "ee2af27c9c1374e3eecd70c8d0f13959a549d3be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webalternatif/flysystem-composite/zipball/ee2af27c9c1374e3eecd70c8d0f13959a549d3be",
+                "reference": "ee2af27c9c1374e3eecd70c8d0f13959a549d3be",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^2.0",
+                "php": "8.0.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "vimeo/psalm": "^4.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webf\\Flysystem\\Composite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Web|Alternatif",
+                    "email": "contact@webalternatif.com",
+                    "homepage": "https://www.webalternatif.com"
+                }
+            ],
+            "description": "A simple interface for composite Flysystem adapters",
+            "keywords": [
+                "Flysystem",
+                "adapter",
+                "composite",
+                "filesystem",
+                "storage"
+            ],
+            "support": {
+                "issues": "https://github.com/webalternatif/flysystem-composite/issues",
+                "source": "https://github.com/webalternatif/flysystem-composite/tree/v0.1.0"
+            },
+            "time": "2021-10-09T15:53:27+00:00"
+        },
+        {
             "name": "webalternatif/flysystem-dsn",
             "version": "v0.3.0",
             "source": {
@@ -5548,16 +5703,16 @@
         },
         {
             "name": "webalternatif/flysystem-failover-bundle",
-            "version": "v0.2.1",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webalternatif/flysystem-failover-bundle.git",
-                "reference": "24b198700c05fbebfb0da10605bbc243b16aebcc"
+                "reference": "37feebb11c8178e22e8eec5191fc6bda37d22c13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webalternatif/flysystem-failover-bundle/zipball/24b198700c05fbebfb0da10605bbc243b16aebcc",
-                "reference": "24b198700c05fbebfb0da10605bbc243b16aebcc",
+                "url": "https://api.github.com/repos/webalternatif/flysystem-failover-bundle/zipball/37feebb11c8178e22e8eec5191fc6bda37d22c13",
+                "reference": "37feebb11c8178e22e8eec5191fc6bda37d22c13",
                 "shasum": ""
             },
             "require": {
@@ -5568,7 +5723,8 @@
                 "symfony/console": "^4.4 || ^5.2",
                 "symfony/dependency-injection": "^4.4 || ^5.2",
                 "symfony/event-dispatcher": "^4.4 || ^5.2",
-                "symfony/http-kernel": "^4.4 || ^5.2"
+                "symfony/http-kernel": "^4.4 || ^5.2",
+                "webalternatif/flysystem-composite": "^0.1.0"
             },
             "require-dev": {
                 "doctrine/common": "^3.1",
@@ -5579,7 +5735,11 @@
                 "league/flysystem-memory": "2.1.0-alpha.1",
                 "phpunit/phpunit": "^9.5",
                 "psalm/plugin-phpunit": "^0.15.1",
+                "symfony/serializer": "^5.3",
                 "vimeo/psalm": "^4.10"
+            },
+            "suggest": {
+                "symfony/serializer": "To enable --format option in console commands"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -5609,9 +5769,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webalternatif/flysystem-failover-bundle/issues",
-                "source": "https://github.com/webalternatif/flysystem-failover-bundle/tree/v0.2.1"
+                "source": "https://github.com/webalternatif/flysystem-failover-bundle/tree/v0.3.0"
             },
-            "time": "2021-09-16T07:47:53+00:00"
+            "time": "2021-10-09T18:50:22+00:00"
         },
         {
             "name": "webalternatif/flysystem-openstack-swift",

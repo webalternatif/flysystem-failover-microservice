@@ -1,3 +1,10 @@
+## v0.1.3 (unreleased)
+
+### ✨ New features
+
+* Bump `webalternatif/flysystem-failover-bundle` to `^0.3.0` to be able to list pending messages
+* Add `symfony/serializer` to be able to format the list of messages
+
 ## v0.1.2 (October 8, 2021)
 
 ### ✨ New features

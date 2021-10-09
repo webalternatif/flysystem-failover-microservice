@@ -296,6 +296,9 @@
             "config/routes.yaml"
         ]
     },
+    "symfony/serializer": {
+        "version": "v5.3.8"
+    },
     "symfony/service-contracts": {
         "version": "v2.2.0"
     },
@@ -313,6 +316,9 @@
     },
     "symfony/yaml": {
         "version": "v5.2.5"
+    },
+    "webalternatif/flysystem-composite": {
+        "version": "v0.1.0"
     },
     "webalternatif/flysystem-dsn": {
         "version": "v0.1.0"
