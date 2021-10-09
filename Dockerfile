@@ -34,13 +34,13 @@ RUN set -eux; \
   find /tmp -type d -exec chmod -v 1777 {} +
 
 # Create and set the working directory
-RUN mkdir -p /opt/app && chown -R www-data:www-data /opt/app
+RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
 # Install dependencies
-COPY --chown=www-data:www-data ./composer.json /opt/app/composer.json
-COPY --chown=www-data:www-data ./composer.lock /opt/app/composer.lock
-COPY --chown=www-data:www-data ./symfony.lock  /opt/app/symfony.lock
+COPY ./composer.json /opt/app/composer.json
+COPY ./composer.lock /opt/app/composer.lock
+COPY ./symfony.lock  /opt/app/symfony.lock
 RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && \
   rm -rf ~/.composer
 
@@ -56,11 +56,11 @@ RUN /create-scripts.sh list-messages process-messages sync && \
   rm /create-scripts.sh
 
 # Copy codebase
-COPY --chown=www-data:www-data ./bin/    bin
-COPY --chown=www-data:www-data ./config/ config
-COPY --chown=www-data:www-data ./public/ public
-COPY --chown=www-data:www-data ./src/    src
-COPY --chown=www-data:www-data ./.env    .env
+COPY ./bin/    bin
+COPY ./config/ config
+COPY ./public/ public
+COPY ./src/    src
+COPY ./.env    .env
 
 # Finish composer
 RUN composer dump-autoload --no-scripts --no-dev --optimize
