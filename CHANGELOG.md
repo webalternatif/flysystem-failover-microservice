@@ -4,6 +4,7 @@
 
 * Bump `webalternatif/flysystem-failover-bundle` to `^0.3.0` to be able to list pending messages
 * Add `symfony/serializer` to be able to format the list of messages
+* Simplify running `list-messages`, `process-messages` and `sync` Symfony commands with `docker run|exec <command>`
 
 ## v0.1.2 (October 8, 2021)
 

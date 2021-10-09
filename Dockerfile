@@ -50,6 +50,11 @@ COPY ./docker/supervisor/ /etc/supervisor.d
 # Copy entrypoint
 COPY ./docker/entrypoint.sh /entrypoint.sh
 
+# Create scripts in /usr/local/bin to easily run Symfony commands
+COPY ./docker/create-scripts.sh /create-scripts.sh
+RUN /create-scripts.sh list-messages process-messages sync && \
+  rm /create-scripts.sh
+
 # Copy codebase
 COPY --chown=www-data:www-data ./bin/    bin
 COPY --chown=www-data:www-data ./config/ config

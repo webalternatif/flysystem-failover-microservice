@@ -7,5 +7,5 @@
 if [ "${USER_ID}" = 0 ] && [ "${GROUP_ID}" = 0 ]; then
   $@
 else
-  su -s /bin/sh www-data -c "$@"
+  su -s /bin/sh www-data -c "$(echo $@)"
 fi

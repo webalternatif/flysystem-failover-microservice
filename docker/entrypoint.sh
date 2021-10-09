@@ -18,7 +18,7 @@ if [ $? -gt 0 ]; then
   echo APP_SECRET=$(pwgen -s1 40) >> .env.local
 fi
 
-if [ -n "$@" ]; then
+if [ -n "$(echo $@)" ]; then
   exec "$@"
 fi
 
@@ -28,8 +28,8 @@ if [ -z "$STORAGES" ]; then
 fi
 
 # Clear and warmup cache
-bin/exec "bin/console cache:clear --no-warmup"
-bin/exec "bin/console cache:warmup"
+bin/exec bin/console cache:clear --no-warmup
+bin/exec bin/console cache:warmup
 
 # Remove supervisor configuration file to disable scan
 if [ "$DISABLE_SCAN" = "true" ] || [ "$DISABLE_SCAN" = "1" ]; then
