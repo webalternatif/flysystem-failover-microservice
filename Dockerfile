@@ -1,4 +1,4 @@
-FROM php:8.0.10-cli-alpine
+FROM php:8.0.12-cli-alpine
 
 RUN apk add --no-cache \
   # Required packages

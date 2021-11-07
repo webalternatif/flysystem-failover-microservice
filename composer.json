@@ -13,6 +13,8 @@
         "league/flysystem": "^2.2",
         "league/flysystem-aws-s3-v3": "^2.0",
         "league/flysystem-bundle": "^2.0",
+        "league/flysystem-ftp": "^2.3",
+        "league/flysystem-sftp": "^2.2",
         "nyholm/dsn": "^2.0",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
@@ -21,7 +23,7 @@
         "symfony/proxy-manager-bridge": "5.3.*",
         "symfony/serializer": "5.3.*",
         "symfony/yaml": "5.3.*",
-        "webalternatif/flysystem-dsn-bundle": "^0.3.2",
+        "webalternatif/flysystem-dsn-bundle": "^0.3.3",
         "webalternatif/flysystem-failover-bundle": "^0.3.0",
         "webalternatif/flysystem-openstack-swift": "^0.2.0"
     },
