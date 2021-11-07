@@ -1,4 +1,4 @@
-## v0.1.3 (unreleased)
+## v0.1.3 (November 7, 2021)
 
 ### ✨ New features
 
