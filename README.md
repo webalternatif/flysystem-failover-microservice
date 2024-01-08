@@ -1,7 +1,7 @@
 # Flysystem Failover Microservice
 
 [![Source code](https://img.shields.io/badge/source-GitHub-blue)](https://github.com/webalternatif/flysystem-failover-microservice)
-[![Software license](https://img.shields.io/github/license/webalternatif/flysystem-failover-microservice)](https://github.com/webalternatif/flysystem-failover-microservice/blob/master/LICENSE)
+[![Software license](https://img.shields.io/github/license/webalternatif/flysystem-failover-microservice)](https://github.com/webalternatif/flysystem-failover-microservice/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/webalternatif/flysystem-failover-microservice)](https://github.com/webalternatif/flysystem-failover-microservice/issues)
 
 This microservice is a Symfony application that allows to synchronize files
